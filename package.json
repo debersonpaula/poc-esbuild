@@ -7,9 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "esbuild-version": "esbuild --version",
     "build": "node build.js",
-    "start": "",
     "dev": "http-server ./dist -p 8000 -o",
-    "copy": "cp "
+    "copy": "cp ",
+    "start": "web-dev-server --open public/ --node-resolve",
+    "start:watch": "web-dev-server --open public/ --node-resolve --watch"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +19,10 @@
     "http-server": "^0.12.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "@web/dev-server": "^0.1.18",
+    "@web/dev-server-esbuild": "^0.2.12",
+    "typescript": "^4.3.5"
   }
 }
